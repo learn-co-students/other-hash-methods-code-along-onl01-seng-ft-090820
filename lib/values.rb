@@ -10,4 +10,11 @@ require 'pry'
 
 def get_the_values(groceries)
   #code your solution here!
+  grocery_list = []
+  groceries.each do |catergory, items|
+    items.each do |item|
+      grocery_list.push(item)
+    end
+  end
+  grocery_list
 end
